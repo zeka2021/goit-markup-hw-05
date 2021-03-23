@@ -51,7 +51,7 @@
         <section class="hero-section overlay">
             <div class=" hero conteiner">
                 <h1 class="hero-text">Эффективное решение для вашего бизнеса</h1>
-                <button class="model-btn" type="button"> Заказать услугу</button>
+                <button class="model-btn" type="button" data-modal-open> Заказать услугу</button>
             </div>
         </section>
         <!-- качества -->
@@ -118,9 +118,15 @@
                     </li>
                     <li class="foto-list-item">
                         <img src="./imgdz/stydio/img2.jpg" alt="телефон" width="370" height="294">
+                        <div class="foto-list-item-wrapper">
+                            <p class="overlay-foto ">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="foto-list-item">
                         <img src="./imgdz/stydio/img3.jpg" alt="планшет" width="370" height="294">
+                        <div class="foto-list-item-wrapper">
+                            <p class="overlay-foto ">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -388,6 +394,13 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>btn</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

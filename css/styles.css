@@ -689,6 +689,9 @@ transform: translateY(0);
   width: 528px;
   height: 581px;
   background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-close-btn {
   position: absolute;
@@ -699,7 +702,12 @@ transform: translateY(0);
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: pointer;
+  cursor: pointer;     
+}
+.modal-close-btn-icon { 
+ fill: #000000;
+ width: 18px;
+ height: 18px; 
 }
 .is-hidden {
   opacity: 0;
